@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_ARV5kJOrEe-RCo3wyVehhw" targetNamespace="http://tns.tibco.com/bw/composite/BWCE_SampleApp_Module" name="BWCE_SampleApp_Module" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_gVMQkJOrEe-RCo3wyVehhw" name="receive_input" promote="ComponentProcess/receive_input">
+    <sca:interface.wsdl xmi:id="_gVOFwpOrEe-RCo3wyVehhw" interface="http://xmlns.example.com/20241026170015PLT#wsdl.interface(receive_input)" scaext:wsdlLocation="../Processes/bwce_send_ems/module/Process.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_gVXPsJOrEe-RCo3wyVehhw" name="RestService" path="/receive_input" docBasePath="http://localhost:7777/BWCE_SampleApp_Module" docResourcePath="Receive_Input" basePath="/" connector="bwce_sampleapp.module.HTTPConnectorResource" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/bwce_send_ems.module.Process-Receive_Input.json">
+      <operation xmi:id="_gVcIMZOrEe-RCo3wyVehhw" operationName="post" nickname="post-receive_input" httpMethod="POST" notes="postReceive_Input" responseStyle="element" outputPartName="item">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <advancedConfig xmi:id="_gVcIMJOrEe-RCo3wyVehhw" blockingQueueSize="8192"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_gVcIMpOrEe-RCo3wyVehhw" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_BaB_8JOrEe-RCo3wyVehhw" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_BaLJ4JOrEe-RCo3wyVehhw" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_BaQCYJOrEe-RCo3wyVehhw" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_BaQCYZOrEe-RCo3wyVehhw" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_BaUT0JOrEe-RCo3wyVehhw" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_BaUT0ZOrEe-RCo3wyVehhw" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
+  <sca:property xmi:id="_BaddwJOrEe-RCo3wyVehhw" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_A5b0UJOrEe-RCo3wyVehhw" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_A5b0UZOrEe-RCo3wyVehhw" processName="bwce_sampleapp.module.SampleRestProcess"/>
+    <sca:service xmi:id="_gVHYEJOrEe-RCo3wyVehhw" name="receive_input">
+      <sca:interface.wsdl xmi:id="_gVHYEZOrEe-RCo3wyVehhw" interface="http://xmlns.example.com/20241026170015PLT#wsdl.interface(receive_input)"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>
