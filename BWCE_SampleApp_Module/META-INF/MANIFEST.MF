@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: BWCE_Send_EMS Module
-Bundle-SymbolicName: BWCE_SampleApp_Module
+Bundle-SymbolicName: BWCE_SampleApp
 Bundle-Version: 1.0.0.qualifier
 Bundle-Vendor: TIBCO Software Inc.
 TIBCO-BW-ApplicationModule: META-INF/module.bwm

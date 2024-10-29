@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>BWCE_SampleApp</name>
+	<name>BWCE_SampleApp.application</name>
 	<comment></comment>
 	<projects>
-		<project>BWCE_SampleApp_Module</project>
+		<project>BWCE_SampleApp</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

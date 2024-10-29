@@ -3,49 +3,49 @@
   <packaging:description></packaging:description>
   <packaging:properties>
     <packaging:property>
-      <packaging:name>//BWCE_SampleApp_Module//BW.APPNODE.NAME</packaging:name>
+      <packaging:name>//BWCE_SampleApp//BW.APPNODE.NAME</packaging:name>
       <packaging:type>xsd:string</packaging:type>
       <packaging:visibility>private</packaging:visibility>
       <packaging:scalable>true</packaging:scalable>
       <packaging:overrideValue>false</packaging:overrideValue>
     </packaging:property>
     <packaging:property>
-      <packaging:name>//BWCE_SampleApp_Module//BW.DEPLOYMENTUNIT.NAME</packaging:name>
+      <packaging:name>//BWCE_SampleApp//BW.DEPLOYMENTUNIT.NAME</packaging:name>
       <packaging:type>xsd:string</packaging:type>
       <packaging:visibility>private</packaging:visibility>
       <packaging:scalable>true</packaging:scalable>
       <packaging:overrideValue>false</packaging:overrideValue>
     </packaging:property>
     <packaging:property>
-      <packaging:name>//BWCE_SampleApp_Module//BW.HOST.NAME</packaging:name>
+      <packaging:name>//BWCE_SampleApp//BW.HOST.NAME</packaging:name>
       <packaging:type>xsd:string</packaging:type>
       <packaging:visibility>private</packaging:visibility>
       <packaging:scalable>true</packaging:scalable>
       <packaging:overrideValue>false</packaging:overrideValue>
     </packaging:property>
     <packaging:property>
-      <packaging:name>//BWCE_SampleApp_Module//BW.DEPLOYMENTUNIT.VERSION</packaging:name>
+      <packaging:name>//BWCE_SampleApp//BW.DEPLOYMENTUNIT.VERSION</packaging:name>
       <packaging:type>xsd:string</packaging:type>
       <packaging:visibility>private</packaging:visibility>
       <packaging:scalable>true</packaging:scalable>
       <packaging:overrideValue>false</packaging:overrideValue>
     </packaging:property>
     <packaging:property>
-      <packaging:name>//BWCE_SampleApp_Module//BW.MODULE.VERSION</packaging:name>
+      <packaging:name>//BWCE_SampleApp//BW.MODULE.VERSION</packaging:name>
       <packaging:type>xsd:string</packaging:type>
       <packaging:visibility>private</packaging:visibility>
       <packaging:scalable>true</packaging:scalable>
       <packaging:overrideValue>false</packaging:overrideValue>
     </packaging:property>
     <packaging:property>
-      <packaging:name>//BWCE_SampleApp_Module//BW.CLOUD.PORT</packaging:name>
+      <packaging:name>//BWCE_SampleApp//BW.CLOUD.PORT</packaging:name>
       <packaging:type>xsd:int</packaging:type>
       <packaging:visibility>private</packaging:visibility>
       <packaging:scalable>true</packaging:scalable>
       <packaging:overrideValue>false</packaging:overrideValue>
     </packaging:property>
     <packaging:property>
-      <packaging:name>//BWCE_SampleApp_Module//BW.MODULE.NAME</packaging:name>
+      <packaging:name>//BWCE_SampleApp//BW.MODULE.NAME</packaging:name>
       <packaging:type>xsd:string</packaging:type>
       <packaging:visibility>private</packaging:visibility>
       <packaging:scalable>true</packaging:scalable>
@@ -54,7 +54,7 @@
   </packaging:properties>
   <packaging:modules>
     <packaging:module>
-      <packaging:symbolicName>BWCE_SampleApp_Module</packaging:symbolicName>
+      <packaging:symbolicName>BWCE_SampleApp</packaging:symbolicName>
       <packaging:technologyType>osgi-bundle,bw-appmodule</packaging:technologyType>
       <packaging:technologyVersion>1.0.0.qualifier</packaging:technologyVersion>
     </packaging:module>
